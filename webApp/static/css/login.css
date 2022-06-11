@@ -1,10 +1,22 @@
 body {
-  font-family: Helvetica;
+  font-family: Sans-serif;
   text-align: center;
   font-size: 15px;
   font-color: #2a2a2a;
+  background-color: #ede8e1;
 }
 
+.main{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  border-radius:50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -13,19 +25,21 @@ body {
 }
 
 .item {
-  width: 50%;
+  bottom-margin:20px;
 }
 
 header {
-  width: 100%;
-  background-color: #cccccc;
-  border: solid;
+  padding-top:10px;
+  height: 100px;
 }
 
 h2{
   font-size: 25px;
   color: black;
 }
+
+ .striped-border { border: 1px solid #000; width: 75%; margin: auto; margin-top: 10px; margin-bottom: 10px; }
+
 #language{
   align: center;
 }
@@ -44,6 +58,9 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 button {
@@ -54,13 +71,17 @@ button {
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 li button {
   padding: 0px;
   background-color: white;
   border: none;
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 600px) {
