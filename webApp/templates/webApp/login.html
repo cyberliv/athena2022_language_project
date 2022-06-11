@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 <body>
-<header id="header">
+  <div class='main'>
+  <header id="header">
       <h2>Translate for Refugees</h2>
+    <p class='striped-border'></p>
     </header>
   <div class='container'>
   <div class='item' id='language'>
@@ -17,7 +19,6 @@
     <p>Виберіть свою мову</p>
     <p>Выберите свой язык</p>
     <p>choisissez votre langue</p>
-    <p></p>
 
     <ul>
       <li><button onclick="toUkraine()"><img src="https://cdn.britannica.com/14/4814-004-7C0DF1BB/Flag-Ukraine.jpg"><br>український</button></li>
@@ -30,11 +31,13 @@
       <li><button onclick="toFrench()"><img src="https://cdn.britannica.com/82/682-050-8AA3D6A6/Flag-France.jpg"><br>français</button></li>
     </ul>
     </div>
+  <p class='striped-border'></p>
     <div class='item'><button onclick="myFunction()">Login</button></div>
   <div class='item'>
     <button onclick="myFunction()">Register</button>
     <p id="demo"></p>
   </div>
   </div>
+</div>
 </body>
 </html>
