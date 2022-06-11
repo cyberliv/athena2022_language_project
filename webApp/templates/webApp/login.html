@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {% load static %}
-    <meta charset="UTF-8">
-    <title>Translate for Refugees</title>
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
-</head>
-<body>
-  <div class='main'>
-  <header id="header">
-      <h2>Translate for Refugees</h2>
-    <p class='striped-border'></p>
-    </header>
-  <div class='container'>
+{% extends 'webApp/base_splash.html' %}
+{% block content %}
   <div class='item' id='language'>
     <p>Select your language</p>
     <p>خپله ژبه وټاکئ</p>
@@ -32,12 +19,11 @@
     </ul>
     </div>
   <p class='striped-border'></p>
-    <div class='item'><button onclick="myFunction()">Login</button></div>
+    <div class='item'>
+      <button onclick="myFunction()">Login</button>
+    </div>
   <div class='item'>
     <button onclick="myFunction()">Register</button>
     <p id="demo"></p>
   </div>
-  </div>
-</div>
-</body>
-</html>
+ {% endblock %}
