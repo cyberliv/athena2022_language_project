@@ -1,5 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
-def post_list(request):
-    return render(request, 'webApp/login.html', {})
+
+def landing_view(request):
+    return render(request, "webApp/landing_page.html")
+
+def register_refugee_view(request):
+    return render(request, "webApp/register_refugee.html")
+
+def register_volunteer_view(request):
+    return render(request, "webApp/register_volunteer.html")
