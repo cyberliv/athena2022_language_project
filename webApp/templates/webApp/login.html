@@ -1,28 +1,16 @@
 {% extends 'webApp/base_splash.html' %}
 {% block content %}
   <div class='item' id='language'>
-    <p>Select your language</p>
-    <p>خپله ژبه وټاکئ</p>
-    <p>Виберіть свою мову</p>
-    <p>Выберите свой язык</p>
-    <p>choisissez votre langue</p>
-
-    <ul>
-      <li><button onclick="toUkraine()"><img src="https://cdn.britannica.com/14/4814-004-7C0DF1BB/Flag-Ukraine.jpg"><br>український</button></li>
-
-      <li><button onclick="toPashto()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Pashto.svg/1200px-Pashto.svg.png"><br>پشتو زبان</button></li>
-
-      <li><button onclick="toRussian()"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/800px-Flag_of_Russia.svg.png"><br>русский</button></li>
-      <li><button onclick="toEnglish()"><img src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"><br>English</a></button></li>
-
-      <li><button onclick="toFrench()"><img src="https://cdn.britannica.com/82/682-050-8AA3D6A6/Flag-France.jpg"><br>français</button></li>
-    </ul>
-    </div>
-  <p class='striped-border'></p>
-    <div class='item'>
-      <button onclick="myFunction()">Login</button>
+    <p><input placeholder="Username"></input></p>
+    <p><input placeholder="Password" type="password"></input></p>
+    <submit></submit>
     </div>
   <div class='item'>
+      <input type="submit" onclick="myFunction()">
+    </div>
+  <p class='striped-border'></p>
+  <div class='item'>
+    <p>No Account?</p>
     <button onclick="myFunction()">Register</button>
     <p id="demo"></p>
   </div>
