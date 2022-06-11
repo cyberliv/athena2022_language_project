@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {% load static %}
-    <meta charset="UTF-8">
-    <title>Translate for Refugees</title>
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
-</head>
-<body>
-<header id="header">
-      <h2>Translate for Refugees</h2>
-    </header>
-  <div class='container'>
+{% extends 'webApp/base_splash.html' %}
+{% block content %}
   <div class='item' id='language'>
     <p>Select your language</p>
     <p>خپله ژبه وټاکئ</p>
     <p>Виберіть свою мову</p>
     <p>Выберите свой язык</p>
     <p>choisissez votre langue</p>
-    <p></p>
 
     <ul>
       <li><button onclick="toUkraine()"><img src="https://cdn.britannica.com/14/4814-004-7C0DF1BB/Flag-Ukraine.jpg"><br>український</button></li>
@@ -30,11 +18,12 @@
       <li><button onclick="toFrench()"><img src="https://cdn.britannica.com/82/682-050-8AA3D6A6/Flag-France.jpg"><br>français</button></li>
     </ul>
     </div>
-    <div class='item'><button onclick="myFunction()">Login</button></div>
+  <p class='striped-border'></p>
+  <div class='item'>
+      <button onclick="myFunction()">Login</button>
+    </div>
   <div class='item'>
     <button onclick="myFunction()">Register</button>
     <p id="demo"></p>
   </div>
-  </div>
-</body>
-</html>
+ {% endblock %}
