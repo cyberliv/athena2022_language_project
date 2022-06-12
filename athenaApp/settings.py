@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webApp',
-    'postman',
+    'talkjs.apps.TalkjsConfig'
 ]
 
 MIDDLEWARE = [
@@ -115,6 +116,10 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-POSTMAN_NOTIFICATION_APPROVAL = True
-POSTMAN_DISABLE_USER_EMAILING = True
-POSTMAN_SHOW_USER_AS = 'obfuscated_sender'
+# POSTMAN_NOTIFICATION_APPROVAL = True
+# POSTMAN_DISABLE_USER_EMAILING = True
+# POSTMAN_SHOW_USER_AS = 'obfuscated_sender'
+
+TALKJS_APP_ID = 'tEKUMpcU'
+TALKJS_API_SECRET = 'sk_test_Cl06WXbMoHUoJbPKhvbOBu6F5prPSUHf'
+TALKJS_API_BASE_URL = 'https://api.talkjs.com/v1/'
