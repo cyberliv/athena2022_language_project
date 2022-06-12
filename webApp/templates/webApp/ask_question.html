@@ -1,4 +1,8 @@
-{% extends 'webApp/base_main.html' %}
+{% extends 'webApp/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/questions.css' %}">
+{% endblock %}
 {% block title %}R Help{% endblock %}
 {% block subtitle %}Ask a Question{% endblock %}
 {% block content %}
