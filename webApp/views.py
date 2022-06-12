@@ -11,4 +11,10 @@ def register_volunteer_view(request):
     return render(request, "webApp/register_volunteer.html")
 
 def question_view(request):
-    return render(request, "webApp/ask_a_question.html")
+    return render(request, "webApp/ask_question.html")
+
+def main_refugee_view(request):
+    return render(request, "webApp/main_refugee.html")
+
+def login_view(request):
+    return render(request, "webApp/main_refugee.html")

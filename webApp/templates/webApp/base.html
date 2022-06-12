@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% block css %}{% endblock %}
+  <title>{% block subtitle %}R Help{% endblock %}</title>
+</head>
+<body>
+  <div class='main'>
+  <div id="header">
+    <h2>{% block header %}Translate for Refugees{% endblock %}</h2>
+    <p class='striped-border'></p>
+    </div>
+  <div class='block_content'>
+  {% block content %}{% endblock %}
+  </div>
+      <div class='footer'>
+       <p class='striped-border'></p>
+        {% block footer %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

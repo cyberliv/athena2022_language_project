@@ -1,141 +1,56 @@
-{% extends 'webApp/base_splash.html' %}
+{% extends 'webApp/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/register_volunteer.css' %}">
+<script src="{% static 'js/register_volunteer.js' %}"></script>
+{% endblock %}
+
+{% block subtitle %}Welcome to R Help{% endblock %}
+{% block header %}Register at R Help {% endblock %}
 {% block content %}
-  <div class='item' id='language'>
-    <table>
-      <form id="survey-form" action="/">
-      <th><div class="col_1"></div></th>
-        <th><div class="col_2"></div></th>
-      <tr>
-        <td>
-      <label for="name" id="name-label">Name<br>
-        </td>
-          <td>
-            <input type ="text" name="name" id="name" placeholder="John Smith">
-              </td>
-        </tr>
-        <tr>
-          <td>
-      <label for="email" id="email-label"> Email<br>
-        </td>
-            <td>
-              <input type="email" name="email" id="email" placeholder="JohnSmith@gmail.com">
-               </td>
-        </tr>
-        <tr>
-          <td>
-        <label for="number" id="number-label"> Age
-          </td>
-            <td>
-          <input type="number" name="age" id="number" min="18" max="110" placeholder="25">
-              </td>
-        </tr>
-        <tr>
-          <td>
-            What are your language skills?</td>
-          <td>
-            <div class="preference">
-              <label class="form_item" for="Ukranian">Ukranian</label>
-              <input class="form_item" type="checkbox" value="" id="Ukranian">
-            <label class="form_item" for="CEFR_ukr">CEFR Level:</label>
-              <div class="popup" onclick="myPopup()">(?)
-  <span class="popuptext" id="myPopup">
-    A1: Beginner<br>
-    A2: Elementary<br>
-    B1: Intermediate<br>
-    B2: Upper Intermediate<br>
-    C1: Advanced<br>
-    C2: Proficiency<br>
-  </span>
-</div>
-<select id="CEFR_ukr" name="CEFR_ukr">
-  <option value="A1">A1</option>
-  <option value="A2">A2</option>
-  <option value="B1">B1</option>
-  <option value="B2">B2</option>
-    <option value="C1">C1</option>
-  <option value="C2">C2</option>
-</select></div>
-            <div class="preference">
-              <label class="form_item" for="Russian">Russian</label>
-              <input class="form_item" type="checkbox" value="" id="Russian">
-            <label class="form_item" for="CEFR_ru">CEFR Level:</label>
-              <div class="popup" onclick="myPopup()">(?)
-  <span class="popuptext" id="myPopup">
-    A1: Beginner<br>
-    A2: Elementary<br>
-    B1: Intermediate<br>
-    B2: Upper Intermediate<br>
-    C1: Advanced<br>
-    C2: Proficiency<br>
-  </span>
-</div>
-<select id="CEFR_ru" name="CEFR_ru">
-  <option value="A1">A1</option>
-  <option value="A2">A2</option>
-  <option value="B1">B1</option>
-  <option value="B2">B2</option>
-    <option value="C1">C1</option>
-  <option value="C2">C2</option>
-</select></div>
-            <div class="preference">
-              <label for="French">French</label>
-              <input type="checkbox" id="French">
-              <label for="CEFR_fr">CEFR Level:</label>
-              <div class="popup" onclick="myPopup()">(?)
-  <span class="popuptext" id="myPopup">
-    A1: Beginner<br>
-    A2: Elementary<br>
-    B1: Intermediate<br>
-    B2: Upper Intermediate<br>
-    C1: Advanced<br>
-    C2: Proficiency<br>
-  </span>
-</div>
-<select id="CEFR_fr" name="CEFR_fr">
-  <option value="A1">A1</option>
-  <option value="A2">A2</option>
-  <option value="B1">B1</option>
-  <option value="B2">B2</option>
-    <option value="C1">C1</option>
-  <option value="C2">C2</option>
-</select>
-               </div>
-            <div class="preference">
-              <label for="Pashto">Pashto</label>
-       <input type="checkbox" id="Pashto">
-       <label for="CEFR_pas">CEFR Level:</label>
-              <div class="popup" onclick="myPopup()">(?)
-  <span class="popuptext" id="myPopup">
-    A1: Beginner<br>
-    A2: Elementary<br>
-    B1: Intermediate<br>
-    B2: Upper Intermediate<br>
-    C1: Advanced<br>
-    C2: Proficiency<br>
-  </span>
-</div>
-<select id="CEFR_pas" name="CEFR_pas">
-  <option value="A1">A1</option>
-  <option value="A2">A2</option>
-  <option value="B1">B1</option>
-  <option value="B2">B2</option>
-    <option value="C1">C1</option>
-  <option value="C2">C2</option>
-</select>
-            </div>
-            <td>
-              <tr>
-                <td></td>
-                <td>
- <input type="submit" id="submit" value="Submit">
-                </td>
-              </tr>
-  </form>
-            </table>
-  <p class='striped-border'></p>
+<div class="form_body">
+<form>
   <div class='item'>
-    <p><a href="">Take me back to the main page</a></p>
-    <p id="demo"></p>
+      <p>
+      <label for="name" id="name-label">Name<br>
+      <input type ="text" name="name" id="name" placeholder="John Smith">
+      </label>
+      </p>
   </div>
-  </div>
+<div class='item'>
+    <p>
+  <label for="email" id="email-label"> Email<br>
+  <input type="email" name="email" id="email" placeholder="JohnSmith@gmail.com">
+</label>
+    </p>
+</div>
+<div class='item'>
+  <p>
+   <label for="language"> Language skills<br>
+     <input type="language" name="language" id="language" placeholder="Ukranian">
+   </label>
+  </p>
+  <p>
+  <label class="form_item" for="CEFR">CEFR Level:
+  <tag class="popup" onclick="myPopup()">(?)
+  <span class="popuptext" id="myPopup">
+    A1: Beginner<br>
+    A2: Elementary<br>
+    B1: Intermediate<br>
+    B2: Upper Intermediate<br>
+    C1: Advanced<br>
+    C2: Proficiency<br>
+  </span>
+  </tag><br>
+  <input type="CEFR" name="CEFR" id="CEFR" placeholder="A1"></label>
+  </p>
+</div>
+    </div>
+<div class="item">
+ <input type="submit" id="submit" value="Submit">
+</div>
+</form>
+ {% endblock %}
+    {% block footer %}
+    <p><a href="{% url 'landing'%}">Take me back to the main page</a></p>
  {% endblock %}

@@ -1,14 +1,22 @@
-{% extends 'webApp/base_splash.html' %}
+{% extends 'webApp/base.html' %}
+{% load static %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/register_refugee.css' %}">{% endblock %}
+{% block subtitle %}Welcome to R Help{% endblock %}
+{% block header %}Register at R Help {% endblock %}
 {% block content %}
-  <div class='item' id='language'>
-    <p><input placeholder="Invite Code"></input></p>
-    <submit></submit>
-    </div>
-  <div class='item'><input type="submit" onclick="myFunction()"></div>
-  <p class='striped-border'></p>
+<div class="">
+  <p>Submit your invite code to register with R Help.</p>
+  <p>Надішліть код запрошення для реєстрації.</p>
+  <p>د راجستر کولو لپاره خپل د بلنې کوډ وسپارئ.</p>
+</div>
   <div class='item'>
-    <p>Want to volunteer?</p>
-    <button onclick="myFunction()">Register as a Volunteer</button>
+    <p><input placeholder="Invite Code"></input></p>
+    </div>
+  <div class='item'>
+    <button onclick="myFunction()">Submit</button>
   </div>
-  </div>
- {% endblock %}
+{% endblock %}
+{% block footer %}
+<p><a href="{% url 'volunteer_register' %}"><button>Register as a Volunteer</button></a></p>
+<p><a href="{% url 'login' %}"><button>Login</button></a></p>
+{% endblock %}

@@ -1,0 +1,64 @@
+.main{
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.item {
+  padding-bottom:20px;
+}
+
+#language{
+  align: center;
+}
+ul {
+
+  }
+
+li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-right:25px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button, input[type=submit] {
+  border: none;
+  background-color: #cccccc;
+  color: black;
+  padding: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+li button {
+  padding: 0px;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+}
+
