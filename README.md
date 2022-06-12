@@ -42,6 +42,6 @@ py -3 manage.py migrate
 # run server
 py -3 manage.py runserver
 ```
-Navigate to `127.0.0.1` on a browser to interact with the landing page.
+Navigate to `127.0.0.1:8000` on a browser to interact with the landing page.
 
 To stop the server, either close powershell with the GUI, or press `ctrl + c`.
