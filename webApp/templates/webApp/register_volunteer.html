@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="{% static 'css/register_volunteer.css' %}">
 <script src="{% static 'js/register_volunteer.js' %}"></script>
 {% endblock %}
-
 {% block subtitle %}Welcome to R Help{% endblock %}
 {% block header %}Register at R Help {% endblock %}
 {% block content %}
@@ -52,5 +51,5 @@
 </form>
  {% endblock %}
     {% block footer %}
-    <p><a href="{% url 'landing'%}">Take me back to the main page</a></p>
+    <p><a href="{% url 'landing'%}"><button>Main Page</button></a></p>
  {% endblock %}

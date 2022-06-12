@@ -1,17 +1,27 @@
-{% extends 'webApp/base_main.html' %}
+{% extends 'webApp/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/register_volunteer.css' %}">
+<script src="{% static 'js/register_volunteer.js' %}"></script>
+{% endblock %}
+{% block subtitle %}Welcome to R Help{% endblock %}
+{% block header %}Register at R Help {% endblock %}
 {% block content %}
 <div class='container'>
 <div class="item">
-  <button>Ask a Question</button>
+  <a href=""><button>Ask a Question</button></a>
     </div>
     <div class="item">
-  <button>Prev Question</button>
+  <a href=""><button>Prev Question</button></a>
     </div>
     <div class="item">
-  <button>Useful Links</button>
+      <a href=""><button>Useful Links</button></a>
     </div>
     <div class="item">
-  <button>Find others nearby</button>
+      <a href=""><button>Find others nearby</button></a>
     </div>
 </div>
+ {% endblock %}
+{% block footer %}
+    <p><a href="{% url 'landing'%}"><button>Logout</button></a></p>
  {% endblock %}
