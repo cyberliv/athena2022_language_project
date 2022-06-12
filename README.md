@@ -5,9 +5,11 @@ Refugees coming to the UK may not have the cultural context or written English s
 
 Since we cannot assume refugees have access to external technology, we aim to make a website that can be accessed on public infrastructure, such as a library computer. Standard account creation mechanisms require an email address within the process, which refugees may not have. For our platform, we provide a selection of charities with an invite code and bank of simple username-password pairs which they provide to the refugees as a signposting tool. Volunteers can register with an email account, since they are likely to have this kind of technology available.
 
-Since refugees are often multi-lingual, we recognise the opportunity for voluntees to communicate with them in a common other language. This broadens the bank of volunteers who can help the refugees. 
+We designed the interface for the platform to be simple and suit non English-speaking users. Since the platform aims to help users with poor English skills, this is a vital design consideration. We included an option for an on-screen keyboard in a wide variety of possible languages for keyboard input. On the launch page, users can select the language by clicking on a flag with a familiar language. 
 
-Refugees are vulnerable. It is therefore crucial that the messages are moderated by a trusted set of users to prevent any explitation that could occur from a totally free platform.
+Since refugees are often multi-lingual, we recognise the opportunity for voluntees to communicate with them in a common other language. This broadens the bank of volunteers who can help the refugees. Volunteers can filter messages by language so that they see content relevant to them.
+
+Refugees are vulnerable. It is therefore crucial that the messages are moderated by a trusted set of users to prevent any explitation that could occur from a totally free platform. Our platform allows moderators to remove users and delete messages.
 
 # Users #
 
@@ -27,6 +29,7 @@ git clone https://github.com/cyberliv/athena2022_language_project.git
 cd athena2022_language_project
 # update packages to match project requirements
 py -3 -m pip install -r requirements.txt
+py -3 -m pip install request
 ```
 
 ## Hosting the App ##
