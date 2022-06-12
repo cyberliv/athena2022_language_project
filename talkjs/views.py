@@ -26,7 +26,7 @@ headers = {
 
 @login_required
 def current_session(request):
-    if request.headers.get('x-requested-with') == 'XMLHttpRequest'():
+    if (request.headers.get('x-requested-with') == 'XMLHttpRequest'()):
         hash = hmac.new(
             bytes(secret, 'utf-8'),  
             bytes(str(request.user.id), 'utf-8'), 
