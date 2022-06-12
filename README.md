@@ -3,15 +3,18 @@ Project for the Athena Hackathon 2022.
 # Problem #
 Refugees coming to the UK may not have the cultural context or the best grasp of the English language.
 
-## Users ##
+# Users #
 
-| Username | Password |
-| --- | --- |
-| athena | athena |
-| kiwi | tasty_kiwi |
+| Username | Password | Type |
+| --- | --- | --- |
+| athena | athena | administrator (superuser) |
+| kiwi | tasty_kiwi | refugee |
 
-## Expected Interactions ##
+# Expected Interactions #
 Below are interactions a user who runs a Windows 10 host should expect.
+
+## Environment Setup ##
+Client downloads Python and pip.
 ```powershell
 # clone the project
 git clone https://github.com/cyberliv/athena2022_language_project.git
@@ -20,8 +23,7 @@ cd athena2022_language_project
 py -3 -m pip install -r requirements.txt
 ```
 
-
-# Hosting the App #
+## Hosting the App ##
 ```powershell
 
 # update db
@@ -31,3 +33,6 @@ py -3 manage.py migrate
 # run server
 py -3 manage.py runserver
 ```
+Navigate to `127.0.0.1` on a browser to interact with the landing page.
+
+To stop the server, either close powershell with the GUI, or press `ctrl + c`.
