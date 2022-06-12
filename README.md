@@ -14,7 +14,7 @@ Refugees coming to the UK may not have the cultural context or the best grasp of
 Below are interactions a user who runs a Windows 10 host should expect.
 
 ## Environment Setup ##
-Client downloads Python and pip.
+Client downloads most recent versions of Python, pip, and git. They run the commands from Powershell (note: Command Line should also work).
 ```powershell
 # clone the project
 git clone https://github.com/cyberliv/athena2022_language_project.git
