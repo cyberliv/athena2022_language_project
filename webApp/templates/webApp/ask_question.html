@@ -1,0 +1,19 @@
+{% extends 'webApp/base_main.html' %}
+{% block content %}
+  <div class='container'>
+<div class="item">
+  <p>Submit your question here and a volunteer will provide you an answer as soon as possible</p>
+  <div class="item_form">
+  <form action="">
+    <p  class=labels>
+      <label class=labels for="tags">Tags</label></p>
+    <p>
+      <input placeholder="Tags" class="tags" id="tags">
+    </p>
+    <p  class=labels ><label for="question">Question</label></p>
+    <p><textarea id="question" name="" rows="10" cols="50" class="keyboardInput" placeholder="Enter Question Here"></textarea></p>
+    <p><input type="submit" value="Upload Picture or Document"><input type="submit" value="Submit"></p>
+</form>
+      </div>
+  </div>
+ {% endblock %}
