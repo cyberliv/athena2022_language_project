@@ -2,24 +2,29 @@
 {% block title %}R Help{% endblock %}
 {% load static %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/keyboard.css' %}">
+<link rel="stylesheet" href="{% static 'css/keyboard.css' %}" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="{% static 'css/ask_question.css' %}">
 <script src="{% static 'js/keyboard.js' %}"></script>
 {% endblock %}
-{% block subtitle %}Ask a Question{% endblock %}
+{% block header %}Ask a Question{% endblock %}
 {% block content %}
 <div class="item">
   <p>Submit your question here and a volunteer will provide you an answer as soon as possible</p>
   <div class="item_form">
   <form action="">
-    <p  class=labels>
-      <label class=labels for="tags">Tags</label></p>
+      <p>
+      <label class=labels for="tags">Tags
+      <input placeholder="add language tags here" class="tags" id="tags">
+      </label>
+      </p>
+      <div class="question_area">
+          <textarea id="submissionfield" name="" rows="10" cols="100" class="keyboardInput" placeholder="Enter Question Here"></textarea>
     <p>
-      <input placeholder="Tags" class="tags" id="tags">
-    </p>
-    <p  class=labels ><label for="question">Question</label></p>
-    <p><textarea id="question" name="" rows="10" cols="50" class="keyboardInput" placeholder="Enter Question Here"></textarea></p>
-    <p><input type="submit" value="Upload Picture or Document"><input type="submit" value="Submit"></p>
+        <p>Click the keyboard to input non-english characters</p>
+        <input type="submit" value="Upload Picture or Document">
+        <input type="submit" value="Submit">
+      </p>
+      </div>
 </form>
       </div>
  {% endblock %}
