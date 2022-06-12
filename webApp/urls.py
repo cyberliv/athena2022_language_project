@@ -8,6 +8,5 @@ urlpatterns = [
     path('refugee_register', views.register_refugee_view, name = "refugee_register"),
     path('volunteer_register', views.register_volunteer_view, name = "volunteer_register"),
     path('question', views.question_view, name = "question"),
-    path('messages/', include('postman.urls', namespace='postman', app_name='postman')),
 ]
 
