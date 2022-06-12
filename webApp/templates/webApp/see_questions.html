@@ -1,0 +1,12 @@
+{% extends 'webApp/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/see_questions.css' %}">
+{% endblock %}
+{% block subtitle %}Welcome to R Help{% endblock %}
+{% block header %}Register at R Help {% endblock %}
+{% block content %}
+ {% endblock %}
+{% block footer %}
+    <p><a href="{% url 'landing'%}"><button>Logout</button></a></p>
+{% endblock %}
