@@ -1,9 +1,12 @@
-from django.urls import path
+from argparse import Namespace
+from django.urls import include, path
 from . import views
 
 
 urlpatterns = [
     path('', views.landing_view, name = "landing"),
-    path('/refugee_register', views.register_refugee_view, name = "register_refugee"),
-    path('/volunteer_register', views.register_volunteer_view, name = "register_volunteer"),
+    path('refugee_register/', views.register_refugee_view, name = "refugee_register"),
+    path('volunteer_register/', views.register_volunteer_view, name = "volunteer_register"),
+    path('question/', views.question_view, name = "question"),
+    path('messages/', include('postman.urls', namespace='postman')),
 ]

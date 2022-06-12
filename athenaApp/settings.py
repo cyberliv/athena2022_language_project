@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webApp',
+    'postman',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+POSTMAN_NOTIFICATION_APPROVAL = True
+POSTMAN_DISABLE_USER_EMAILING = True
+POSTMAN_SHOW_USER_AS = 'obfuscated_sender'
