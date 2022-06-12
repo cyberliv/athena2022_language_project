@@ -14,12 +14,12 @@ from django.contrib.auth.decorators import login_required
 app_id = settings.TALKJS_APP_ID
 content_type = 'application/json'
 secret = settings.TALKJS_API_SECRET
-authorization = f'Bearer {secret}'
+#authorization = f'Bearer {secret}'
 talkjs_base_url = f'{settings.TALKJS_API_BASE_URL}{app_id}'
 
 headers = {
     'Content-type': content_type,
-    'Authorization': authorization,
+    #'Authorization': authorization,
 }
 
 
@@ -169,7 +169,7 @@ def get_response_result(response):
     return bad_request()
 
 def bad_request():
-    return HttpResponse(status=400)
+    return HttpResponse(status=401)
 
 def ok_request():
     return HttpResponse(status=200)
