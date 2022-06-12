@@ -18,3 +18,6 @@ def main_refugee_view(request):
 
 def login_view(request):
     return render(request, "webApp/main_refugee.html")
+
+def see_questions(request):
+    return render(request, "webApp/see_questions.html")
