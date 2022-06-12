@@ -1,12 +1,13 @@
 {% extends 'webApp/base.html' %}
+{% block title %}R Help{% endblock %}
 {% load static %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/questions.css' %}">
+<link rel="stylesheet" href="{% static 'css/keyboard.css' %}">
+<link rel="stylesheet" href="{% static 'css/ask_question.css' %}">
+<script src="{% static 'js/keyboard.js' %}"></script>
 {% endblock %}
-{% block title %}R Help{% endblock %}
 {% block subtitle %}Ask a Question{% endblock %}
 {% block content %}
-  <div class='container'>
 <div class="item">
   <p>Submit your question here and a volunteer will provide you an answer as soon as possible</p>
   <div class="item_form">
@@ -21,5 +22,8 @@
     <p><input type="submit" value="Upload Picture or Document"><input type="submit" value="Submit"></p>
 </form>
       </div>
-  </div>
  {% endblock %}
+
+  {% block footer %}
+  <a href="{% url 'login' %}"><button>Back to Main Page</button></a>
+  {% endblock %}
