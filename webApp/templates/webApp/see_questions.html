@@ -4,9 +4,37 @@
 <link rel="stylesheet" href="{% static 'css/see_questions.css' %}">
 {% endblock %}
 {% block subtitle %}Welcome to R Help{% endblock %}
-{% block header %}Register at R Help {% endblock %}
+{% block header %} Questions {% endblock %}
 {% block content %}
- {% endblock %}
+
+
+
+<body> 
+    <div class='row'>
+        <div class='a-column'>
+          <div class="view_messages">
+            <div class="django_messages">
+              <p>User: {{context.user}}</p>
+              <p class="message_body">Message: {{context.message}} Help me translate this document.</p>
+            </div>
+            <div class="django_messages">
+              <p>User: {{context.user}}</p>
+              <p class="message_body">Message: {{context.message}} I don't understand what a national insurance number is. Please help me!</p>
+            </div> 
+          </div>
+        </div>
+      <div class='b-column'>
+        <div class="view_message">
+          <div class="django_message">
+            <p> User: {{context.user}}</p>
+            <p> Message: {{context.message}} Help me translate this document. </p>
+            <p> Uploads: </p>
+          </div>
+        </div>
+      </div>
+  </body>
+
+  {% endblock %}
 {% block footer %}
-    <p><a href="{% url 'landing'%}"><button>Logout</button></a></p>
+  <p><a href="{% url 'landing'%}"><button>Logout</button></a></p>
 {% endblock %}

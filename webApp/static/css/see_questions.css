@@ -1,8 +1,12 @@
+.main{
+    width: 75%;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height:80%
+    min-height:80%;
   }
 
   .item {
@@ -64,7 +68,6 @@
   }
 
   input {
-    width: 100%;
     padding: 10px 15px;
   }
 
@@ -154,7 +157,7 @@
   }
 
   textarea {
-    width: 100%;
+    width:100%;
     padding: 5em;
   }
 
@@ -171,27 +174,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    margin-left:5%;
+    align-items: left;
+    margin-left:15%;
   }
 
   .a-column{
-    width:30%;
+    width:25%;
   }
 
   .b-column{
-    width:60%;
+    width:55%;
   }
 
   .view_messages {
-    height=90%;
+    min-height:50%;
     padding: 0.5em;
     background-color:	#cccccc;
   }
 
   .view_message {
-    height=90%;
+    min-height:50%;
     padding: 0.5em;
     background-color:	#ede8e1;
   }
